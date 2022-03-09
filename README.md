@@ -2,7 +2,6 @@
 Group 6
 
 Group Members:
-
 1.Sreshta Chowdary Kampally
 2.Kunj Patel
 3.Phani Rohitha Kaza
