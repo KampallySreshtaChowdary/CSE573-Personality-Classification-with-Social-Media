@@ -1,4 +1,12 @@
 # CSE573-Personality-Classification-with-Social-Media
+
+
+Group 31
+
+Group member:
+1. Qiang Fu
+2. Kiran Shanthappa
+3. Sreshta Chowdary Kampally
 Group 6
 
 Group Members:
