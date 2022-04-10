@@ -122,9 +122,9 @@ library(fpc)
 dbscan::kNNdistplot(Msvd$u, k =  5)
 abline(h = 0.4, lty = 2)
 # fpc package
-res.fpc_svd <- fpc::dbscan(Msvd$u, eps = 0.008, MinPts = 5)
+res.fpc_svd <- fpc::dbscan(Msvd$u, eps = 0.0078, MinPts = 4)
 # dbscan package
-db_svd <- dbscan::dbscan(Msvd$u, 0.008, 5)
+db_svd <- dbscan::dbscan(Msvd$u, 0.0078, 4)
 
 all(res.fpc_svd$cluster == db_svd)
 fviz_cluster(res.fpc_svd, Msvd$u, geom = "point")
