@@ -99,18 +99,36 @@ set.seed(123)
 km.res_svd <- kmeans(Msvd$u, 5, iter.max = 10, nstart = 3)
 
 print(km.res_svd)
+#plot kmeans on svd:
+fviz_cluster(km.res_svd, data = Msvd$u[, -5],
+              palette = c("#2E9FDF", "#00AFBB", "#E7B800", "#DC143C", "#000000"), 
+              geom = "point",
+              ellipse.type = "convex"
+)
 
 #LDA to K-means
 set.seed(123)
 km.res_lda <- kmeans(Mlda@gamma, 5, iter.max = 10, nstart = 3)
 
 print(km.res_lda)
+#plot kmeans on lda:
+fviz_cluster(km.res_lda, data = Mlda@gamma[, -5],
+             palette = c("#2E9FDF", "#008000", "#E7B800", "#DC143C", "#800080"), 
+             geom = "point",
+             ellipse.type = "convex"
+)
 
 #PCA to K-means:
 set.seed(123)
 km.res_pca <- kmeans(Mpca$x, 5, iter.max = 10, nstart = 3)
 
 print(km.res_pca)
+#plot kmeans on pca:
+fviz_cluster(km.res_pca, data = Mpca$x[, -5],
+             palette = c("#2E9FDF", "#00AFBB", "#E7B800", "#DC143C", "#800080"), 
+             geom = "point",
+             ellipse.type = "convex"
+)
 
 ## DB Scan:
 install.packages("fpc")
