@@ -16,3 +16,4 @@ prediction_analysis.R gives the accuracies and plots for svd and lda.
 
 Custering.R gives results of various clustering methods on svd, lda and also includes pca
 ![pca to kmeans](https://user-images.githubusercontent.com/43363158/163224172-cc10379f-cdbe-414a-808a-7772f4ba59e9.png)
+The above graph is for kmeans on pca which gave us the most defined clusters with less overlap
